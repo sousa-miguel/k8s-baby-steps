@@ -1,0 +1,7 @@
+minikube start # starts cluster
+
+kubectl create deployment nginx-depl --image=nginx -o=yaml # create deployment
+kubectl get deployment # check status
+kubectl get pod # check status
+
+

@@ -1,0 +1,7 @@
+minikube start -p nana # start cluster
+kubectl apply -f mongo-secret.yaml # create secret
+kubectl apply -f mongo.yaml # create deployment
+kubectl apply -f mongo-configmap.yaml # create configmap
+kubectl apply -f mongo-express.yaml # create deployment
+### only relevant on minikube. used to set an ip address to external services
+minikube -p nana service mongo-express-service
